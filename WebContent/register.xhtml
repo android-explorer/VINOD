@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+<title>
+Register Page
+</title>
+</h:head> 
+
+<body> 
+<center>
+<h2>Please Register</h2></center><br></br><br></br>
+
+
+<h:messages style = "color:red;margin:8px;" />
+<h:form>
+<center>
+<h:outputLabel value="Name" />&nbsp; &nbsp;&nbsp;
+<h:inputText value="#{register.name}" required="true" requiredMessage="* Please enter your name"></h:inputText><br></br><br></br>
+
+<h:outputLabel value="first Name" />&nbsp;
+<h:inputText value="#{register.firstname}"></h:inputText>   <br></br><br></br>
+
+<h:outputLabel value="LastName" />&nbsp;
+<h:inputText value="#{register.lastname}" required="true" requiredMessage="* Please enter your lastname"></h:inputText><br></br><br></br>
+
+<h:outputLabel value="Email ID" />&nbsp;
+<h:inputText value="#{register.emailid}" required="true" requiredMessage="* Please enter your emailid"></h:inputText><br></br><br></br>
+
+
+<h:outputLabel value="Password" />&nbsp;
+<h:inputText value="#{register.password}" required="true" requiredMessage="* Please enter your password"></h:inputText><br></br><br></br>
+
+<h:outputLabel value="Address" />&nbsp;
+<h:inputText value="#{register.address}"></h:inputText><br></br><br></br>
+ 
+<h:outputLabel value="Country" />&nbsp;
+<h:inputText value="#{register.country}"></h:inputText><br></br><br></br>
+
+
+<h:commandButton action="#{register.submit()}" value="Save" ></h:commandButton><br></br><br></br></center>
+</h:form>
+</body> 
+</html>
